@@ -179,16 +179,23 @@ header .leftheader .logo{
     border: 1px solid white;
     border-radius: 5px;
     padding: 12px;
-    
-    
+
 }
+
+input:focus{
+    outline: none;
+}
+
+
+
 .email-container{
+    position: relative;
     gap: 3px;
     display: flex;
     align-items: center ;
     background: transparent; 
-    border-radius: 10px;   
-    padding: 0px 0px;      
+    padding: 0px 0px;    
+    padding-bottom:20px;  
     flex-grow: 1;        
     max-width: 600px;    
     min-width: 200px;
@@ -234,6 +241,7 @@ header .leftheader .logo{
     border-radius: 50%;
     cursor: pointer;
     transition: transform 0.3s ease ;
+
 }
 
 .category-circle:hover{
@@ -334,3 +342,17 @@ footer{
     text-align: center;
 }
 
+#mensaje-feedback {
+    border: none;        
+    color: #4CAF50;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;                        
+    left: 0;
+    font-size: 0.85rem;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    text-align: left;                  
+    width: 100%;
+    white-space: nowrap;
+}
