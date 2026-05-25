@@ -18,6 +18,7 @@
         </a>
         <span class="location">📍Medellin</span>
       </div>
+
       <form class="search-container">
         <img src="img/sombreroicon.png" class="icon-left" />
         <input
@@ -25,10 +26,14 @@
           type="text"
           placeholder="Servicios, Hogar, freelancers..."
         />
+        <datalist id="recom">
+          <option value="Plomero">Plomero</option>
+        </datalist>
         <button type="submit" class="search-button">
           <img src="img/lupa.png" />
         </button>
       </form>
+
       <div class="userprofile">
         <img src="img/usericon.png" />
         <span>Elon musk</span>
@@ -49,51 +54,75 @@
                 en HELMI
               </p>
               <form class="email-container">
-                <input type="email" id="user-email" placeholder="EMAIL" />
-                <button id="btn-enviar">Enviar</button>
-                <p id="mensaje-feedback"></p>
+                <input
+                  type="email"
+                  id="user-email"
+                  placeholder="EMAIL"
+                  required
+                />
+                <div class="creepy-button-wrapper">
+                  <button type="submit" id="btn-enviar" class="btn-creepy">
+                    <span class="btn-text">Enviar</span>
+                    <div class="creepy-base">
+                      <div class="eye left-eye">
+                        <div class="pupil"></div>
+                      </div>
+                      <div class="eye right-eye">
+                        <div class="pupil"></div>
+                      </div>
+                    </div>
+                  </button>
+                </div>
               </form>
+              <p id="mensaje-feedback"></p>
             </div>
           </div>
         </div>
       </section>
+      <div class="carousel-wrapper">
+        <button class="arrow-btn left" onclick="scrollCategorias(-500)">
+          &#10094;
+        </button>
+        <section class="categories" id="categoriaspp">
+          <div class="category-item" id="btn-reparaciones">
+            <div class="category-circle"></div>
+            <span>Reparaciones</span>
+          </div>
 
-      <section class="categories">
-        <div class="category-item" id="btn-reparaciones">
-          <div class="category-circle"></div>
-          <span>Reparaciones</span>
-        </div>
+          <div class="category-item">
+            <div class="category-circle"></div>
+            <span>Hogar</span>
+          </div>
 
-        <div class="category-item">
-          <div class="category-circle"></div>
-          <span>Hogar</span>
-        </div>
+          <div class="category-item">
+            <div class="category-circle"></div>
+            <span>Exterior</span>
+          </div>
 
-        <div class="category-item">
-          <div class="category-circle"></div>
-          <span>Exterior</span>
-        </div>
+          <div class="category-item">
+            <div class="category-circle"></div>
+            <span>Mudanzas</span>
+          </div>
 
-        <div class="category-item">
-          <div class="category-circle"></div>
-          <span>Mudanzas</span>
-        </div>
+          <div class="category-item">
+            <div class="category-circle"></div>
+            <span>Tecnología</span>
+          </div>
 
-        <div class="category-item">
-          <div class="category-circle"></div>
-          <span>Tecnología</span>
-        </div>
+          <div class="category-item">
+            <div class="category-circle"></div>
+            <span>Freelance</span>
+          </div>
 
-        <div class="category-item">
-          <div class="category-circle"></div>
-          <span>Freelance</span>
-        </div>
-
-        <div class="category-item">
-          <div class="category-circle"></div>
-          <span>Envíos</span>
-        </div>
-      </section>
+          <div class="category-item">
+            <div class="category-circle"></div>
+            <span>Envíos</span>
+          </div>
+        </section>
+        <button class="arrow-btn right" onclick="scrollCategorias(500)">
+          &#10095;
+        </button>
+      </div>
     </main>
 
     <section class="masbuscado">
@@ -107,8 +136,6 @@
         <span>Profesor</span>
       </div>
     </section>
-    <script src="script.js"></script>
-
     <section class="seccion-unete">
       <h1 class="unete-text">Únete a <strong>HELMI</strong></h1>
       <div class="contenedor-cards">
@@ -136,6 +163,25 @@
 
     <footer>
       <p>&copy; 2026 HELMI - Medellín, Antioquia.</p>
+      <div class="redes">
+            <ul>
+                <li class="item">
+                  <a
+                    href="https://web.facebook.com/profile.php?id=100083687590673" target="_blank"
+                    ><img class="icon" src="img/faceicon.png" alt=""
+                  /></a>
+                </li>
+                <li class="item">
+                  <a
+                  target="_blank"
+                    href="https://www.google.com/maps/@5.9444234,-75.5227288,3a,75y,114.96h,95.47t/data=!3m7!1e1!3m5!1szkzy4mZZcZx5OOH6lMGaGA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-5.467319003651596%26panoid%3Dzkzy4mZZcZx5OOH6lMGaGA%26yaw%3D114.95976746163088!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D"
+                    ><img class="icon" src="img/mapsicon.png" alt=""
+                  /></a>
+                </li>
+              </div>
+            </ul>
+
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
