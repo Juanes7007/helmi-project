@@ -4,6 +4,7 @@ html {
     box-sizing: border-box;
 }
 
+
 *,
 *:before,
 *:after {
@@ -132,6 +133,8 @@ header {
     color: white;
     padding: 0 20px;
 }
+
+
 
 .hero-content {
     display: flex;
@@ -338,6 +341,80 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+
+
+.reparaciones {
+    width: 100%;
+    height: 100%;
+
+    background-image: url('img/reparaciones.png');
+
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+    background-size: 200%;
+}
+
+.hogar {
+    width: 100%;
+    height: 100%;
+
+    background-image: url('img/hogar.png');
+
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+    background-size: 200%;
+}
+
+.exterior {
+    width: 100%;
+    height: 100%;
+
+    background-image: url('img/exterior.png');
+
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+    background-size: 200%;
+}
+
+.mudanzas {
+    width: 100%;
+    height: 100%;
+    background-image: url('img/mudanzas.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 200%;
+}
+
+.tecnologia {
+    width: 100%;
+    height: 100%;
+    background-image: url('img/tecnologia.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 200%;
+}
+
+
+.freelancers {
+    width: 100%;
+    height: 100%;
+    background-image: url('img/freelancer.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 200%;
+}
+
+.envios {
+    width: 100%;
+    height: 100%;
+    background-image: url('img/envios.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 200%;
 }
 
 .category-circle {
